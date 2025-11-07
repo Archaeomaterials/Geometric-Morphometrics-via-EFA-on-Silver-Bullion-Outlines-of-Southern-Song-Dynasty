@@ -13,7 +13,7 @@ This tool helps researchers:
 4. Format according to journal requirements
 5. Polish and finalize manuscripts
 
-Author: Academic Review Writing Expert System
+Author: Archaeological Research Team
 Version: 1.0.0
 """
 
@@ -325,7 +325,7 @@ class ReviewArticleAssistant:
 {critical_analysis}
 
 **Key Literature:**
-{chr(10).join([f"- {ref}" for ref in literature_refs])}
+{'\n'.join([f"- {ref}" for ref in literature_refs])}
 """
         section = ManuscriptSection(
             section_name=section_name,
@@ -619,7 +619,11 @@ def interactive_assistant():
         elif choice == "3":
             print("\n--- Add Literature Entry ---")
             authors = input("Authors: ").strip()
-            year = int(input("Year: ").strip())
+            try:
+                year = int(input("Year: ").strip())
+            except ValueError:
+                print("Error: Year must be a number. Entry not added.")
+                continue
             title = input("Title: ").strip()
             journal = input("Journal: ").strip()
             key_findings = input("Key findings: ").strip()

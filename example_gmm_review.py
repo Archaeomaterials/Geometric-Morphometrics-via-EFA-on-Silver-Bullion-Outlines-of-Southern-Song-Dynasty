@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Example: Using the Review Article Assistant for GMM Research
-============================================================
+Example: Using the Review Article Assistant for Geometric Morphometrics (GMM) Research
+=======================================================================================
 
 This example demonstrates how to use the academic review article writing
 assistant to create a review article about geometric morphometrics in
