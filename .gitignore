@@ -1,0 +1,30 @@
+# Review article projects created by the assistant
+review_projects/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# R files
+.Rhistory
+.RData
+.Rproj.user
